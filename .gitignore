@@ -15,6 +15,7 @@ user_guide/*
 #-------------------------
 /nbproject/
 .idea/*
+prepros.cfg
 
 ## Sublime Text cache files
 *.tmlanguage.cache
