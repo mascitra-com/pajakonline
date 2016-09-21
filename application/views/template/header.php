@@ -33,9 +33,9 @@
                         </li>
                         <!-- Menu Footer-->
                         <li class="user-footer btn-group" role="group" aria-label="..." style="align-items: center">
-                            <button class="btn btn-default" onclick="profil()">Profil</button>
-                            <button class="btn btn-default" onclick="gantiPassword()">Ganti Password</button>
-                            <button class="btn btn-default" onclick="signout()">Sign out</button>
+                            <button class="btn btn-primary" onclick="profil()">Profil</button>
+                            <button class="btn btn-primary" onclick="gantiPassword()">Ganti Password</button>
+                            <button class="btn btn-primary" onclick="signout()">Sign out</button>
                         </li>
                     </ul>
                 </li>
