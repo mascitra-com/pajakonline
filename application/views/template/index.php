@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title><?= $title ?> | Pajak Online</title>
     <?php $this->load->view('template/styles') ?>
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 </head>
 <div class="wrapper">
     <body class="hold-transition skin-blue-light sidebar-mini">

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class user_m extends CI_Model
+class user_m extends MY_Model
 {
     private $table = 'users';
     public function __construct()
