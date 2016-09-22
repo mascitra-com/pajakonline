@@ -1,14 +1,15 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Auth extends CI_Controller
+class Auth extends MY_Controller
 {
-    private $template = 'template/index';
+    private $model = array('user_m');
+    private $library;
+    private $helper;
 
     public function __construct()
     {
-        parent::__construct();
-        $this->load->model('user_m');
+        parent::__construct($this->model,$this->library,$this->helper);
     }
 
     public function index()

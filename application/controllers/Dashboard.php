@@ -1,17 +1,15 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Dashboard extends CI_Controller
+class Dashboard extends MY_Controller
 {
-    private $template = 'template/index';
+    private $model;
+    private $library;
+    private $helper;
 
     public function __construct()
     {
-        parent::__construct();
-        if (! $this->authentication->is_loggedin())
-        {
-            redirect('auth');
-        }
+        parent::__construct($this->model,$this->library,$this->helper);
     }
 
     public function index()
