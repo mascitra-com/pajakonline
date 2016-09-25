@@ -24,7 +24,7 @@ class Instansi extends MY_Controller
      */
     public function showCompanies()
     {
-        $this->data['wajib'] = $this->instansi_m->companies();
+        $this->data['instansi'] = $this->instansi_m->companies();
         $this->load_view('Instansi', 'pajak/daftarInstansi');
     }
 }
