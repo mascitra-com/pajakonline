@@ -4,7 +4,7 @@
         <div class="box box-info">
             <!-- form start -->
             {user_details}
-            <form class="form-horizontal" action="<?=site_url('auth')?>" method="post">
+            <form class="form-horizontal" action="<?=site_url($user.'/store')?>" method="POST">
                 <div class="box-body">
                     <div class="form-group">
                         <label for="inputUsername" class="col-sm-2 control-label">Username</label>

@@ -4,7 +4,7 @@
         <!-- Horizontal Form -->
         <div class="box box-info">
             <!-- form start -->
-            <form class="form-horizontal" action="<?=base_url('auth/update')?>" method="post">
+            <form class="form-horizontal" action="<?=base_url($user.'/update')?>" method="post">
                 <div class="box-body">
                     <div class="form-group">
                         <label for="inputOldPassword" class="col-sm-4 control-label">Password Lama</label>

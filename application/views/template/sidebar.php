@@ -20,17 +20,12 @@
             </li>
             <li class="">
                 <a href="<?= site_url('transaksi') ?>">
-                    <i class="fa fa-calculator"></i> <span>Transaksi</span>
+                    <i class="fa fa-calculator"></i> <span>Daftar Transaksi</span>
                 </a>
             </li>
             <li class="">
-                <a href="<?= site_url('wajib') ?>">
-                    <i class="fa fa-institution"></i> <span>Wajib Pajak</span>
-                </a>
-            </li>
-            <li class="">
-                <a href="<?= site_url('obyek') ?>">
-                    <i class="fa fa-map-marker"></i> <span>Obyek Pajak</span>
+                <a href="<?= site_url('instansi') ?>">
+                    <i class="fa fa-institution"></i> <span>Daftar Instansi</span>
                 </a>
             </li>
         </ul>

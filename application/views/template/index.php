@@ -1,3 +1,4 @@
+<?php if(ENVIRONMENT == 'development'): var_dump($this->session); endif;?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

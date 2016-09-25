@@ -20,6 +20,6 @@ class user_m extends MY_Model
     {
         $this->db->set($data);
         $this->db->where('id', $user_identifier);
-        $this->db->update($this->table);
+        return $this->db->update($this->table);
     }
 }
