@@ -17,7 +17,7 @@ class Users extends MY_Controller
     public function index()
     {
         $id = $this->session->userdata('identifier');
-        if ($id == 1){
+        if ($id === '1'){
             $this->session->set_userdata('user', 'admin');
             redirect('admin');
         } else {
@@ -40,6 +40,7 @@ class Users extends MY_Controller
 
     /**
      *  Memperbarui Data Profil Akun
+     *  TODO Tambahkan Form Validation
      */
     public function store()
     {
@@ -69,10 +70,11 @@ class Users extends MY_Controller
 
     /**
      *  Update Password Akun
+     *  TODO Tambahkan Form Validation
+     *  TODO Tambahkan Verifikasi dengan Password sekarang
      */
     public function update()
     {
-        $password = $this->input->post('inputOldUsername');
         $new_password = $this->input->post('inputNewPassword');
         if ($this->authentication->change_password($new_password))
         {

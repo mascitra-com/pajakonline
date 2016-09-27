@@ -3,11 +3,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class user_m extends MY_Model
 {
+    // TODO Tambahkan Form Validation Function
     private $table = 'users';
-    public function __construct()
-    {
-        parent::__construct();
-    }
 
     public function read($user_identifier)
     {

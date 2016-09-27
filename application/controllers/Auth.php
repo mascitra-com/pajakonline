@@ -15,6 +15,9 @@ class Auth extends CI_Controller
 
     public function index()
     {
+        if ($this->authentication->is_loggedin()) {
+            redirect('users');
+        }
         $this->load->view('auth/login');
     }
 
@@ -35,5 +38,4 @@ class Auth extends CI_Controller
         $this->session->sess_destroy();
         redirect('auth');
     }
-
 }

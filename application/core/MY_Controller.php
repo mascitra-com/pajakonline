@@ -25,8 +25,8 @@ class MY_Controller extends CI_Controller
         $this->data['user'] = $this->session->userdata('user');
         // Menentukan daftar tampilan yang memiliki Tabel
         switch ($this->data['title']) {
-            case "Transaksi":
-            case "Instansi":
+            case 'Transaksi':
+            case 'Instansi':
                 $this->tableFunction();
                 break;
         }

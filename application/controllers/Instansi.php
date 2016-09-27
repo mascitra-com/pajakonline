@@ -16,7 +16,7 @@ class Instansi extends MY_Controller
     public function showTransaction()
     {
         $this->data['transaksi'] = $this->instansi_m->transactions();
-        $this->load_view('Transaksi', 'pajak/daftarTransaksi');
+        $this->load_view('Transaksi', 'instansi/daftarTransaksi');
     }
 
     /**
@@ -25,6 +25,6 @@ class Instansi extends MY_Controller
     public function showCompanies()
     {
         $this->data['instansi'] = $this->instansi_m->companies();
-        $this->load_view('Instansi', 'pajak/daftarInstansi');
+        $this->load_view('Instansi', 'instansi/daftarInstansi');
     }
 }
